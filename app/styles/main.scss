@@ -1,6 +1,7 @@
 $icon-font-path: '../fonts/';
 
-// bower:scss
+// bower:scss'
+@import "app/styles/variables.scss";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
@@ -67,27 +68,21 @@ body {
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.bs-component{
+  position: relative;
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    display: block;
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+    .modal-dialog{
+      width: 90%;
+    }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }
